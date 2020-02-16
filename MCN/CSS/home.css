@@ -1,0 +1,14 @@
+#count1,
+#count2 {
+    color: #147cb3;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-container {
+    height: 200px;
+}
+
+/* .card-container img {
+    width: 75%;
+} */

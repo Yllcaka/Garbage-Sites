@@ -1,0 +1,27 @@
+* {
+    font-family: Garamond;
+}
+
+header {
+    background-color: rgb(141, 204, 241);
+}
+
+header a:hover {
+    color: rgb(181, 228, 255) !important;
+}
+
+header .active a,
+header .active a:hover {
+    color: rgb(24, 169, 253) !important;
+}
+
+header a {
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+    border-width: 2px;
+    border-color: rgb(235, 27, 110) !important;
+    color: rgb(235, 27, 110) !important;
+    transition: 0.5s ease-in-out;
+}
