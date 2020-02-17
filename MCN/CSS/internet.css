@@ -1,0 +1,39 @@
+#myTab .nav-item {
+    margin: 0 auto;
+    border: 3px solid #8bdfe2;
+    border-bottom: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nav-link,
+.nav-link:hover,
+#myTab .active {
+    color: #55dadf;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #8bdfe2;
+}
+
+#myTab .nav-item .active {
+    color: white;
+    background-color: #8bdfe2 !important;
+    border-color: #8bdfe2;
+}
+
+#internet-description h1 {
+    color: rgb(20, 162, 187);
+    margin-top: 20px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table td {
+    background: #8bdfe2;
+    border: 2px solid #fff;
+    padding: 3px;
+    /* color: rgb(161, 161, 253); */
+}

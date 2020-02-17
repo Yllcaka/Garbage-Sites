@@ -1,5 +1,10 @@
 * {
-    font-family: Garamond;
+    font-family: "Garamount";
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 header {
@@ -21,7 +26,26 @@ header a {
 
 .navbar-toggler {
     border-width: 2px;
-    border-color: rgb(235, 27, 110) !important;
-    color: rgb(235, 27, 110) !important;
+    border-color: rgb(24, 169, 253) !important;
+    color: rgb(24, 169, 253) !important;
     transition: 0.5s ease-in-out;
+}
+
+.btn {
+    border: 3px solid rgb(24, 169, 253);
+    color: rgb(24, 169, 253);
+}
+
+.btn:hover {
+    background-color: rgb(24, 169, 253);
+    color: #ffffff;
+}
+
+.shadow46and2 {
+    box-shadow: 1px 1px 5px 0px rgba(219, 219, 219, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.shadow46and2:hover {
+    box-shadow: 4px 4px 5px 3px rgba(219, 219, 219, 1) !important;
 }
