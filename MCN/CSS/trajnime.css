@@ -1,0 +1,10 @@
+.pink-heading {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+[aria-expanded="true"] {
+    border: 2px solid rgb(24, 169, 253);
+}
