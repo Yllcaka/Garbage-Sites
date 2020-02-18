@@ -11,6 +11,28 @@ a {
     text-decoration: none !important;
 }
 
+header .nav-item {
+    display: inline-block;
+    color: rgb(24, 169, 253);
+    text-decoration: none;
+}
+
+header .nav-item::after {
+    margin-left: 10%;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(24, 169, 253);
+    transition: width .5s;
+}
+
+header .nav-item:hover::after,
+header .active::after {
+    width: 80%;
+    transition: width .5s;
+}
+
 header {
     background-color: rgb(141, 204, 241);
 }
@@ -123,6 +145,19 @@ footer .copyright {
 
 .shadow46and2:hover {
     box-shadow: 4px 4px 5px 3px rgba(219, 219, 219, 1) !important;
+}
+
+@media screen and (max-width:767px) {
+    header .nav-item::after {
+        margin-left: 0;
+    }
+
+    header .nav-item:hover::after,
+    header .active::after {
+        width: 15%;
+        transition: width .5s;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
