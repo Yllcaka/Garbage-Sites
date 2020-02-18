@@ -24,3 +24,12 @@
 .card {
     height: 300px;
 }
+
+.card-group .card {
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+/* .card-group .card {
+    margin: 10px;
+} */

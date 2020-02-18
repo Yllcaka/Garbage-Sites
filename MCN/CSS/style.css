@@ -12,9 +12,14 @@ a {
 }
 
 header .nav-item {
-    display: inline-block;
+    /* font-size: 14px; */
+    /* display: inline-block; */
     color: rgb(24, 169, 253);
     text-decoration: none;
+}
+
+header .nav-link {
+    padding-right: 30px;
 }
 
 header .nav-item::after {
@@ -55,6 +60,7 @@ header a {
     border-color: rgb(24, 169, 253) !important;
     color: rgb(24, 169, 253) !important;
     transition: 0.5s ease-in-out;
+    display: none;
 }
 
 .btn {
@@ -156,6 +162,10 @@ footer .copyright {
     header .active::after {
         width: 15%;
         transition: width .5s;
+    }
+
+    .navbar-toggler {
+        display: block;
     }
 
 }
