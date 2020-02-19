@@ -28,14 +28,28 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
+          <!-- Qitu -->
+          <div class="dropdown">
+            <li class="drop nav-item"><a class=" nav-link" href="#">Ofertat</a>
+              <ul class="sub_menu dropdown-menu ">
+                <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+                <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
+              </ul>
+            </li>
+          </div>
+          <!-- <li class="nav-item dropdown drop">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              OFERTAT
+            </a>
+            <ul class="dropdown-menu sub_menu dropdown drop" aria-labelledby="navbarDropdown">
+
+              <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+              <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
+            </ul>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="internet.html">INTERNETI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="telefoni.html">TELEFONI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="webdesign.html">WEB & DESIGN</a>
+            <a class="nav-link" href="webdesign.html">DESIGN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="networking.html">NETWORKING</a>
@@ -53,38 +67,46 @@
       </div>
     </nav>
   </header>
-
+  <!-- <ul class="dropdown">
+    <li class="drop"><a href="#">Really Tall Menu</a>
+      <ul class="sub_menu">
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li><a href="#">Dolor</a></li>
+      </ul>
+    </li>
+  </ul> -->
   <section>
     <div class="container mt-2">
-      <img class="img-fluid" src="Images/designtemp.png" alt="designtemp">
+      <img class="img-fluid mb-3" src="Images/designtemp.png" alt="designtemp">
       <div class="row mx-auto">
         <div class="col-md-4 text-center">
-          <div class="card border-primary mb-3" style="max-width: 18rem;">
+          <div class="card border-primary mb-3 mx-auto" style="max-width: 18rem;">
             <div class="card-header">GRAPHIC DESIGN</div>
             <div class="card-body text-primary">
               <p class="card-text">Duke kombinuar pasjonin dhe kreativitetin për të ofruar tek ju imazhin e duhur te
                 biznesit tuaj me cilësinë më të lartë.</p>
-              <button class="btn">MË TEPËR</button>
+              <button class="btn animate right">MË TEPËR</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card border-primary mb-3" style="max-width: 18rem;">
+          <div class="card border-primary mb-3 mx-auto" style="max-width: 18rem;">
             <div class="card-header">WEB DESIGN</div>
             <div class="card-body text-primary">
               <p class="card-text">Cdo biznes modern kërkon të këtë prezencën e tij në internet. Faqja e saj duhet të
                 reflektojë aktivitetin dhe avantazhet e kesaj kompanie në treg.</p>
-              <button class="btn">MË TEPËR</button>
+              <button class="btn animate radial">MË TEPËR</button>
             </div>
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card border-primary mb-3" style="max-width: 18rem;">
+          <div class="card border-primary mb-3 mx-auto" style="max-width: 18rem;">
             <div class="card-header">PROMOCIONE</div>
             <div class="card-body text-primary">
               <p class="card-text">Shikoni ofertat e ndryshme me cmimet më konkuruese në treg për shërbimet Graphic
                 Design dhe Web Design, duke i dhënë punës tuaj pamjën që meriton të transmetohet.</p>
-              <button class="btn">MË TEPËR</button>
+              <button class="btn animate left">MË TEPËR</button>
             </div>
           </div>
         </div>
@@ -92,7 +114,7 @@
     </div>
 
   </section>
-
+  <h2 class="text-center text-primary">PORTOFOLIO</h2>
   <div class="card-group container">
     <div class="row">
       <div class="card col-md-4">
@@ -293,7 +315,7 @@
   </div>
 
 
-
+  <span class="animate left">Left</span>
 
 
 
@@ -313,6 +335,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="JavaScript/dropdown.js"></script>
 </body>
 
 </html>

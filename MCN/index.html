@@ -32,11 +32,16 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">HOME</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="internet.html">INTERNETI</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="telefoni.html">TELEFONI</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Ofertat
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="internet.html">INTERNETI</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="telefoni.html">TELEFONI</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="webdesign.html">WEB & DESIGN</a>
@@ -57,7 +62,7 @@
 			</div>
 		</nav>
 	</header>
-	<div id="carouselExampleControls" class="carousel slide container-lg" data-ride="carousel">
+	<div id="carouselExampleControls" class="carousel slide container-lg" style="height: 30vw;" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="Images/banner.jpg" alt="First slide">
@@ -78,12 +83,23 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+	<blockquote class="container">
+		<p class="quotation">
+			MC Networking me nje angazhim te madhe ne cilesi, i jep nje kenaqesi te madhe klientit duke I garantuar
+			standarte te larta profesionale per ti sherbyer ne zhvillimin e infrastruktures. MC Networking angazhohet
+			plotesisht per te kuptuar nevojat e klientit dhe te arrije ne permbushjen e pritshmerise se kerkesave ne
+			kohe dhe brenda buxhetit. </p>
+		<span class="quotefooter text-right"> —
+			Endri Meksi(CEO)</span>
+	</blockquote>
+	<section id="staff">
+		<div class="container">
+			<img src="Images/staff.jpg" alt="Ekipa" class="img-fluid w-75">
+		</div>
+	</section>
 	<section id="index-begin">
 		<div class="container mt-2">
-			<div class="text-center">
-				<img class="img-fluid" src="Images/banner.jpg" alt="banner">
-			</div>
-			<div id="carding" class="row mt-3">
+			<div id="carding" class="row mt-3 mx-auto">
 				<div class="col-md-4">
 					<div class="card text-center" style="width: 18rem;">
 						<div class="card-container">
@@ -97,7 +113,7 @@
 								Duke filluar nga:</p>
 							<p id="count1"></p>
 							<p>Lekë / muaj</p>
-							<a href="internet.html" class="btn btn-primary">Shiko Ofertat</a>
+							<a href="internet.html" class="btn ">Shiko Ofertat</a>
 						</div>
 					</div>
 				</div>
@@ -111,7 +127,7 @@
 							<h5 class="card-title">NETWORKING</h5>
 							<p class="card-text">Duke ecur në hapat e teknoligjisë Biznesi juaj ka nevojën për një
 								rrjetë gjithashtu për servera.</p>
-							<a href="networking.html" class="btn btn-primary">Më tepër</a>
+							<a href="networking.html" class="btn ">Më tepër</a>
 						</div>
 					</div>
 				</div>
@@ -127,9 +143,21 @@
 								ofruar shërbimin e telefonise fikse duke filluar që nga:</p>
 							<p id="count2"></p>
 							<p>Leke/min</p>
-							<a href="telefoni.html" class="btn btn-primary">Shiko Ofertat</a>
+							<a href="telefoni.html" class="btn ">Shiko Ofertat</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="project-question">
+			<div class="container">
+				<h2 class="text-center pt-5">
+					<b> Keni nevoj te na <span class="blue-dot">Kontaktoni</span></b>
+				</h2>
+				<div class="text-center pb-5 pt-3">
+					<button class="btn px-4" onclick="window.location.href ='kontakt.html#forma'">Contact</button>
 				</div>
 			</div>
 		</div>
@@ -157,8 +185,8 @@
 						<li class="mb-1"><a href="about-us.html">About us</a></li>
 						<li class="mb-1"><a href="about-us.html#creative-people">Work portfolio</a></li>
 						<li class="mb-1"><a href="about-us.html#qualified">Team</a></li>
-						<li class="mb-1"><a href="contact.html#forma">Plan and pricing</a></li>
-						<li class="mb-1"><a href="about-us.html#counter">News</a></li>
+						<li class="mb-1">MC NETWORKING SH.P.K, themeluar me
+							23/10/2007</li>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -198,7 +226,7 @@
 	<script src="JavaScript/jquery.waypoints.min.js"></script>
 	<script src="JavaScript/waypoints.min.js"></script>
 	<script src="JavaScript/counter.js"></script>
-
+	<script src="JavaScript/dropdown.js"></script>
 
 </body>
 
