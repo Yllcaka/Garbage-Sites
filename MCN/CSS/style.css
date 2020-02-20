@@ -16,6 +16,18 @@ a {
     font-weight: 700 !important;
 }
 
+.blue-border {
+    border: 2px solid rgb(24, 169, 253);
+}
+
+.radius {
+    border-radius: 15px 0px 15px 0px;
+}
+
+.radius2 {
+    border-radius: 0px 15px 0px 15px;
+}
+
 .blue-list {
     padding-top: 3rem;
 }
@@ -35,6 +47,7 @@ table {
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 20px;
+    border-radius: 4px;
 }
 
 table td {
@@ -84,9 +97,6 @@ tr:nth-child(even) {
     background-size: cover;
 }
 
-.blue-border {
-    border: 2px solid rgb(24, 169, 253);
-}
 
 input,
 textarea,
@@ -223,8 +233,7 @@ select:focus {
 
 /* DERI QITU */
 header .nav-item {
-    /* font-size: 14px; */
-    /* display: inline-block; */
+
     color: rgb(24, 169, 253);
     text-decoration: none;
 }
@@ -244,14 +253,28 @@ header .nav-item::after {
 }
 
 header .nav-item:hover::after,
-header .active::after {
+header .active::after,
+.dropdown {
     width: 80%;
     transition: width .5s;
 }
 
-.dropdown-menu,
-.dropdown-menu a:hover {
+.dropdown .nav-item::after {
+    height: 2px;
+    margin-left: 0;
+}
+
+.dropdown .nav-item:hover::after,
+.dropdown .active::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.dropdown-menu {
+    border-radius: 4px !important;
     margin-top: 40px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     background-color: rgb(141, 204, 241);
 }
 
@@ -259,7 +282,9 @@ header {
     background-color: rgb(141, 204, 241);
 }
 
-header a:hover {
+header a:hover,
+header .nav-item:hover:not(.drop) a,
+.dropdown-menu a:hover {
     color: rgb(181, 228, 255) !important;
 }
 
@@ -373,19 +398,6 @@ footer .copyright {
 /* QITU E TEPOSTH JANE PER DROPDOWN */
 
 
-/* 
-.dropdown li a {
-    display: block;
-    color: #34495e;
-    position: relative;
-    z-index: 2000;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 300;
-} */
-
-
-
 .dropdown ul {
     display: none;
     position: absolute;
@@ -395,22 +407,17 @@ footer .copyright {
     /* z-index: 1000; */
 }
 
-/* ul.dropdown ul li {
-    font-weight: normal;
-    background: #f6f6f6;
-    color: #000;
-    border-bottom: 1px solid #ccc;
-} */
 
 div.dropdown ul li a {
     display: block;
     color: #34495e !important;
     background: rgb(141, 204, 241) !important;
+
 }
 
 div.dropdown ul li a:hover {
     display: block;
-    background: #3498db !important;
+    /* background: #3498db !important; */
     color: #fff !important;
 }
 
@@ -439,12 +446,17 @@ div.dropdown ul li a:hover {
 /*DERI QITU  */
 
 @media screen and (max-width:767px) {
+    .dropdown-menu {
+        margin-top: 0;
+    }
+
     header .nav-item::after {
         margin-left: 0;
     }
 
     header .nav-item:hover::after,
-    header .active::after {
+    header .active::after,
+    .dropdown {
         width: 15%;
         transition: width .5s;
     }

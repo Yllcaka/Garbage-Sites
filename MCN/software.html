@@ -17,28 +17,30 @@
 
 <body>
   <header>
-    <a class="navbar-brand text-center" href="index.html"><img class="w-75" src="Images/logo.png" alt=""></a>
-    <button class="navbar-toggler float-right mt-4 mr-4" type="button" data-toggle="collapse"
-      data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
     <nav class="navbar navbar-expand-md navbar-light">
-
-
+      <a class="navbar-brand" href="index.html"><img class="w-75" src="Images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
+          <!-- Qitu -->
+          <div class="dropdown">
+            <li class="drop nav-item"><a class="nav-link" role="button" href="#" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">OFERTAT</a>
+              <ul class="dropdown dropdown-menu">
+                <li class="nav-item"><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="telefoni.html">TELEFONI</a>
+                </li>
+              </ul>
+            </li>
+          </div>
           <li class="nav-item">
-            <a class="nav-link" href="internet.html">INTERNETI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="telefoni.html">TELEFONI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="webdesign.html">WEB & DESIGN</a>
+            <a class="nav-link" href="webdesign.html">DESIGN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="networking.html">NETWORKING</a>
@@ -213,6 +215,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="JavaScript/dropdown.js"></script>
 </body>
 
 </html>

@@ -24,30 +24,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
           <!-- Qitu -->
           <div class="dropdown">
-            <li class="drop nav-item"><a class="nav-link" role="button" href="#" data-toggle="dropdown"
+            <li class="drop nav-item active"><a class="nav-link" role="button" href="#" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">OFERTAT</a>
-              <ul class="dropdown">
-                <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
-                <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
+              <ul class="dropdown dropdown-menu">
+                <li class="nav-item"><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+                <li class="nav-item active"><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
               </ul>
             </li>
           </div>
-          <!-- <li class="nav-item dropdown drop">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              OFERTAT
-            </a>
-            <ul class="dropdown-menu sub_menu dropdown drop" aria-labelledby="navbarDropdown">
-
-              <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
-              <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
-            </ul>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="webdesign.html">DESIGN</a>
           </li>
@@ -78,11 +67,11 @@
               optimale të sinjalit duke arritur edhe ulje totale të vonesës dhe eliminim të paqartësisë, për tingullin
               më të pastër. Teknologjitë e reja dhe zhvillimi i industrisë së telekomunikacionit kanë ulur rrënjësisht
               kostot e komunikimit.</p>
-            <button onclick="window.location.href = 'contact.html#map'" class="btn px-4 mt-2">Më Tepër</button>
+            <button onclick="window.location.href = 'telefoni.html#table'" class="btn px-4 mt-2">Më Tepër</button>
           </div>
         </div>
         <div class="col-md-6 text-center order-md-1">
-          <img class="img-fluid blue-border p-3" src="Images/float.jpeg" alt="">
+          <img class="img-fluid blue-border radius p-3" src="Images/float.jpeg" alt="">
         </div>
 
       </div>
@@ -104,11 +93,11 @@
               <li class="w-75">Pagesën përkatëse për çdo komunikim të kryer dhe gjithashtu te ndare sipas operatorëve
               </li>
             </ul>
-            <button onclick="window.location.href = 'contact.html#map'" class="btn px-4 mt-2">Më Tepër</button>
+            <button onclick="window.location.href = 'telefoni.html#table'" class="btn px-4 mt-2">Më Tepër</button>
           </div>
         </div>
         <div class="col-md-6 text-center mt-5">
-          <img class="img-fluid blue-border p-3" src="Images/float2.jpeg" alt="">
+          <img class="img-fluid blue-border radius2 p-3" src="Images/float2.jpeg" alt="">
         </div>
 
       </div>
@@ -116,10 +105,10 @@
   </section>
   <section>
     <div class="container my-5">
-      <h1 class="text-center"><span class="blue-dot">Plani</span> shërbimit përfshine :</h1>
+      <h1 class="text-center"><span class="blue-dot">Plani</span> i shërbimit përfshine :</h1>
       <div class="row">
         <div class="mx-auto text-center col-md-6">
-          <img src="Images/float3.jpeg" alt="" class="img-fluid blue-border p-3">
+          <img src="Images/float3.jpeg" alt="" class="img-fluid blue-border radius p-3">
         </div>
         <ul class="blue-list col-md-6">
           <li>Identifikim i thirrjeve hyrëse</li>
@@ -131,8 +120,8 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container table-stripped">
+  <section id="table">
+    <div class="container table-stripped mb-5">
       <div class="w-75 mx-auto">
         <div>
           <table class="mx-auto">
@@ -267,6 +256,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="JavaScript/dropdown.js"></script>
 </body>
 
 </html>
