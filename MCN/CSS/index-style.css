@@ -33,10 +33,11 @@
 
 blockquote {
     font-size: 30px;
-    background: #f9f9f9;
-    border-left: 10px solid #8bdfe2;
+    color: white;
+    /* background: #f9f9f9;
+    border-left: 10px solid #8bdfe2; */
     margin: .5em 10px;
-    padding: 0 10px;
+    padding: 10vw 10px !important;
     quotes: "\201C""\201D""\2018""\2019";
     padding: 10px 20px;
     line-height: 1.4;
@@ -71,4 +72,22 @@ blockquote {
     text-align: right;
     font-size: 1em;
     font-style: italic;
+    float: right;
+}
+
+#carouselControls i {
+    color: black !important;
+    font-size: 60px;
+    transition: 0.3s ease-in-out;
+}
+
+#carouselControls i:hover,
+#carouselControls a:hover i {
+    color: rgb(24, 169, 253) !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+    transition: 1s ease-in-out;
 }

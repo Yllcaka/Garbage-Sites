@@ -16,6 +16,69 @@ a {
     font-weight: 700 !important;
 }
 
+.blue-list {
+    padding-top: 3rem;
+}
+
+.blue-list li::before {
+    content: "•";
+    color: rgb(24, 169, 253) !important;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../Images/quote.jpeg");
+    /* transform: scale(1.2); */
+    /* Set a specific height */
+    /* min-height: 500px; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blue-border {
+    border: 2px solid rgb(24, 169, 253);
+}
+
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: rgb(24, 169, 253);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    /* border-radius: 30px; */
+    border-color: rgb(24, 169, 253);
+    border-width: 4px;
+}
+
+.fit-image {
+    margin: 0 10px;
+    width: 40vh;
+    object-fit: cover;
+    height: 40vh;
+    text-align: center;
+    border-radius: 10px;
+    /* only if you want fixed height */
+}
+
 /* Ai tripi per animation */
 /* .animate { */
 /* padding: 50px 0;
@@ -38,6 +101,7 @@ a {
     -webkit-text-stroke-width: 0.02em;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     background-repeat: no-repeat;
     transition: background-size .5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
 }
@@ -140,6 +204,7 @@ header .active::after {
 
 .dropdown-menu,
 .dropdown-menu a:hover {
+    margin-top: 40px;
     background-color: rgb(141, 204, 241);
 }
 

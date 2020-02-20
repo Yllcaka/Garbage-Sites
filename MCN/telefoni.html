@@ -12,12 +12,207 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/telefoni-style.css">
-  <title>Hello, world!</title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="index.html"><img class="w-75" src="Images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <!-- Qitu -->
+          <div class="dropdown">
+            <li class="drop nav-item"><a class="nav-link" role="button" href="#" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">OFERTAT</a>
+              <ul class="dropdown">
+                <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+                <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
+              </ul>
+            </li>
+          </div>
+          <!-- <li class="nav-item dropdown drop">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              OFERTAT
+            </a>
+            <ul class="dropdown-menu sub_menu dropdown drop" aria-labelledby="navbarDropdown">
 
+              <li><a class="dropdown-item" href="internet.html">INTERNETI</a></li>
+              <li><a class="dropdown-item" href="telefoni.html">TELEFONI</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="webdesign.html">DESIGN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="networking.html">NETWORKING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="software.html">SOFTWARE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trajnime.html">TRAINIME</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">KONTAKT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="float-phone">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 mt-5 mb-4 order-md-2">
+          <div class="col-12">
+            <h1>Telefonia fikse më koston më të <span class="blue-dot">ulët</span></h1>
+            <p class="pt-3">Perdorimi i teknologjinë më të fundit, me cilësinë më të lartë të zërit, për të ofruar
+              shërbimin e telefonise fikse me kostot më të ulëta. Sistemi i transmetimit gjithashtu siguron rrugën më
+              optimale të sinjalit duke arritur edhe ulje totale të vonesës dhe eliminim të paqartësisë, për tingullin
+              më të pastër. Teknologjitë e reja dhe zhvillimi i industrisë së telekomunikacionit kanë ulur rrënjësisht
+              kostot e komunikimit.</p>
+            <button onclick="window.location.href = 'contact.html#map'" class="btn px-4 mt-2">Më Tepër</button>
+          </div>
+        </div>
+        <div class="col-md-6 text-center order-md-1">
+          <img class="img-fluid blue-border p-3" src="Images/float.jpeg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="float-phone">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 mt-5 mb-4">
+          <div class="col-12">
+            <h1>Kontroll në kohë <span class="blue-dot">reale</span></h1>
+            <p class="pt-3">Nëpërmjet shërbimit kontroll në kohë reale ne i ofrojmë klientave tanë mundësinë për të
+              kontrolluar permes internetit pa pagesë shtesë në cdo moment të ditës tarifa të detajuara dhe të
+              kontrollueshme si:</p>
+            <ul class="blue-list">
+              <li>Numrin e thirrur</li>
+              <li>Datën</li>
+              <li>Orën</li>
+              <li class="w-75">Pagesën përkatëse për çdo komunikim të kryer dhe gjithashtu te ndare sipas operatorëve
+              </li>
+            </ul>
+            <button onclick="window.location.href = 'contact.html#map'" class="btn px-4 mt-2">Më Tepër</button>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-5">
+          <img class="img-fluid blue-border p-3" src="Images/float2.jpeg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="parallax"></div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group mx-auto" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+              href="#list-home" role="tab" aria-controls="home">Telefoni</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+              href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+              href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+              href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <table class=" mx-auto">
+                <tbody>
+                  <tr>
+                    <td>Telefoni</td>
+                    <td class=" w-50"><img src="Images/fest.jpeg" alt="" class="img-fluid"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Kompania</td>
+                    <td>
+                      Cmimi lekë/min me tvsh</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Albtelecom fiks</td>
+                    <td>
+                      3 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Vodafone</td>
+                    <td>
+                      20.0 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Amc</td>
+                    <td>
+                      20.0 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Eagle Mobile</td>
+                    <td>
+                      21 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Plus</td>
+                    <td>
+                      34 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Greqi fiks</td>
+                    <td>
+                      3.32 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Greqi celulare</td>
+                    <td>
+                      39 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Itali fiks</td>
+                    <td>
+                      4.5 lek</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Itali celularë</td>
+                    <td>
+                      52 lek</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              Nëpërmjet shërbimit kontroll në kohë reale ne i ofrojmë klientave tanë mundësinë për të kontrolluar permes
+              internetit pa pagesë shtesë në cdo moment të ditës tarifa të detajuara dhe të kontrollueshme si:
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
