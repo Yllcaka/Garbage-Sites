@@ -53,6 +53,7 @@ select {
     outline: none !important;
     box-shadow: none !important;
     transition: 0.2s ease-in-out !important;
+    color: rgb(71, 71, 71) !important;
 }
 
 input:hover,
@@ -92,6 +93,11 @@ select:focus {
 /* font-size: 80px; */
 
 /* } */
+
+.diagonal {
+    transform: rotate(-45deg);
+    font-size: 25px;
+}
 
 .animate {
     /* font-family: 'Roboto', sans-serif; */
