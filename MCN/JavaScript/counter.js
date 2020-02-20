@@ -1,4 +1,4 @@
-function animateValue(id, start, end, duration, cnt, item) {
+function animateValue(id, start, end, duration, cnt, item = "") {
     var range = end - start;
     var current = start;
     var increment = end > start ? cnt : -1;
@@ -15,8 +15,10 @@ function animateValue(id, start, end, duration, cnt, item) {
 }
 $("#carding").waypoint(function () {
     if ($("#count1").is(":empty")) {
-        animateValue("count1", 0, 1299, 10, 3, "");
-        animateValue("count2", 0, 3, 1000, 1, "");
+        animateValue("count1", 0, 1299, 1, 3);
+        animateValue("count2", 0, 120, 500, 1, "+")
+        animateValue("count3", 0, 3, 800, 1);
+
     }
 
 }, {

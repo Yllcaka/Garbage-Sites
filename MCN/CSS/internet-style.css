@@ -36,17 +36,6 @@
     margin-top: 20px;
 }
 
-table {
-    margin: 0 auto;
-}
-
-table td {
-    background: #8bdfe2;
-    border: 2px solid #fff;
-    padding: 3px;
-    /* color: rgb(161, 161, 253); */
-}
-
 .added-stuff {
     background-color: #8bdfe2;
 }

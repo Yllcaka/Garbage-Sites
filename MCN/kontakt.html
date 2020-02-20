@@ -104,27 +104,32 @@
       <h2 class="text-center mb-5">Send us message for any <br>kind of help</h2>
       <form class="mx-auto">
         <div class="form-group">
-          <label for="help-question">Emri juaj *</label>
-          <input type="text" class="form-control" id="help-question" aria-describedby="emailHelp" placeholder="Emri"
-            required>
+          <label for="email">Emri dhe Mbiemri *</label>
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Emri" required>
         </div>
         <div class="form-group">
-          <label for="E-mail">Adresa juaj e-mail*</label>
+          <label for="E-mail">E-mail *</label>
           <input type="email" class="form-control" id="E-mail" placeholder="E-mail" required>
         </div>
-        <div class="form-group">
-          <label for="sel1">Kategoria</label>
-          <select class="form-control" id="sel1">
-            <option>Suporti Teknik</option>
-            <option>Financa</option>
-            <option selected>Marketingu</option>
-            <option>Programim</option>
-            <option>Web</option>
-          </select>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="subjekti">Subjekti *</label>
+            <input type="text" class="form-control" id="subjekti">
+          </div>
+          <div class="col-md-6">
+            <label for="kategoria">Kategoria</label>
+            <select class="form-control" id="kategoria">
+              <option>Suporti Teknik</option>
+              <option>Financa</option>
+              <option selected>Marketingu</option>
+              <option>Programim</option>
+              <option>Web</option>
+            </select>
+          </div>
         </div>
         <div class="form-group">
-          <label for="Textarea">Mesazhi</label>
-          <textarea class="form-control" id="Textarea" cols="30" rows="5"></textarea>
+          <label for="message">Mesazhi</label>
+          <textarea class="form-control" id="message" cols="30" rows="5"></textarea>
         </div>
 
         <button type="submit" class="btn px-4">Send message</button>

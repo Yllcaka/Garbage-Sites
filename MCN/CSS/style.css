@@ -30,9 +30,50 @@ a {
     font-weight: 800;
 }
 
+table {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+table td {
+    border: 2px solid #fff;
+    padding: 3px;
+    width: 25%;
+}
+
+tr {
+    background: #8bdfe2;
+}
+
+tr:nth-child(even) {
+    background-color: #a9e7e9 !important;
+}
+
 .parallax {
     /* The image used */
     background-image: url("../Images/quote.jpeg");
+    /* transform: scale(1.2); */
+    /* Set a specific height */
+    /* min-height: 500px; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text {
+    font-size: 12vw;
+    font-weight: 900;
+    cursor: default !important;
+    -webkit-text-stroke-color: rgb(24, 169, 253);
+    /* -webkit-text-stroke-width: 0.12em; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url("../Images/tech.jpg");
     /* transform: scale(1.2); */
     /* Set a specific height */
     /* min-height: 500px; */

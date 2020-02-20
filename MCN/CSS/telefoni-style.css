@@ -17,27 +17,6 @@
 
 }
 
-table {
-    margin: 0 auto;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 20px;
-}
-
-table td {
-    border: 2px solid #fff;
-    padding: 3px;
-    width: 25%;
-}
-
-tr {
-    background: #8bdfe2;
-}
-
-tr:nth-child(even) {
-    background-color: #a9e7e9 !important;
-}
-
 .imagedit {
     width: 25% !important;
 }

@@ -1,5 +1,6 @@
 #count1,
-#count2 {
+#count2,
+#count3 {
     color: #147cb3;
     font-size: 30px;
     font-weight: bold;
@@ -53,6 +54,10 @@ blockquote {
     top: 30px;
     color: #8bdfe2;
     font-size: 3em;
+}
+
+.padding {
+    margin-bottom: 125px;
 }
 
 .quotation:after {
