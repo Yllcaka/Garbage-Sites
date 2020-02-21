@@ -289,7 +289,9 @@ header .nav-item:hover:not(.drop) a,
 }
 
 header .active a,
-header .active a:hover {
+header .active a:hover,
+header .active:hover a,
+header .active:hover {
     color: rgb(24, 169, 253) !important;
 }
 

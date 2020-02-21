@@ -14,6 +14,9 @@
     background-color: rgb(24, 169, 253);
     color: #ffffff;
 } */
+/* .carousel-item {
+    transition: transform 1s ease-in-out !important;
+} */
 
 .card-header {
     background-color: rgb(141, 204, 241);
@@ -43,6 +46,10 @@
     font-weight: 600;
 }
 
+.modal-content {
+    background-color: rgb(109, 207, 207);
+}
+
 #myGallery i {
     color: black !important;
     font-size: 60px;
@@ -63,3 +70,31 @@
 /* .card-group .card {
     margin: 10px;
 } */
+@media screen and (max-width:1125px) {
+    .card-group .card {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .card-group .card {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card-group .card {
+        height: 90vw;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .card-group .card {
+        height: 115vw;
+        width: 100%;
+    }
+}
